@@ -63,6 +63,6 @@ Data and system output format details can be found from [data/README.md](data/RE
 
 * To leave the mailing list: visit https://groups.google.com/a/dstc.community/forum/#!forum/list/unsubscribe
 
-### For specific enquiries about DSTC9 Track1
+### For specific enquiries about DSTC10 Track1
 
 Please feel free to contact:  feizhengcong (at) gmail (dot) com 
