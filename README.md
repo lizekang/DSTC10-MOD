@@ -12,7 +12,8 @@ As a kind of new expression elements, Internet memes are popular and extensively
 ## Important Links 
 
 * [Track Proposal](https://drive.google.com/file/d/1uLqEuZCd3szKhXb-zSH-nlKG5Ea-nuTA/view) 
-
+* [Data Formats](data/README.md)
+* [Baseline Details](baselines/README.md) 
 
 ## Task
 
@@ -21,8 +22,34 @@ This challenge consists of three sub-tasks:
 | Task #1 | Text Response Modeling | 
 |:---------------:|--------------------------------------------|
 | Goal | To generate a coherent and natural text response given the multi-modal history context | 
-| Input | multi-modal dialogue history (u_1, u_2, ..., u_{t-1}), where u_i = (S_i, m_i), and S_i represent text-only response and m_i represents suitable meme id | 
-| Output | natural、fluent、and informative machine text response S_t in line with dialogue history |
+| Input | Multi-modal dialogue history (u_1, u_2, ..., u_{t-1}), where u_i = (S_i, m_i), and S_i represent text-only response and m_i represents suitable meme id | 
+| Output | Natural、fluent、and informative machine text response S_t in line with dialogue history |
+
+
+
+| Task #2 | Meme Retrieval | 
+|:---------------:|--------------------------------------------|
+| Goal | To select a suitable internet meme from candidates given the multi-modal history context and generated text response | 
+| Input | Multi-modal dialogue history (u_1, u_2, ..., u_{t-1}) and generated text response S_t, where u_i = (S_i, m_i), and S_i represent text-only response and m_i represents suitable meme id | 
+| Output | Suitable and vivid internet meme m_t in line with dialogue history |
+
+
+
+| Task #3 | Meme Emotion Classification | 
+|:---------------:|--------------------------------------------|
+| Goal | To predict the emotion type when respond with an internet meme | 
+| Input | Multi-modal dialogue history (u_1, u_2, ..., u_t), where u_i = (S_i, m_i), and S_i represent text-only response and m_i represents suitable meme id | 
+| Output | Emotion c_t for current meme usage |
+
+
+Participants will develop systems to generate the outputs for each task.
+They can leverage the annotations and the ground-truth responses available in the training and validation datasets.
+
+In the test phase, participants will be given a set of unlabeled test instances.
+And they will submit **up to 5** system outputs for **all three tasks**.
+
+**NOTE**: For someone who are interested in only one or two of the tasks, we recommend to use our baseline system for the remaining tasks to complete the system outputs.
+
 
 
 ## Evaluation 
@@ -32,6 +59,9 @@ Each submission will be evaluated in the following task-specific automated metri
 | Task                                   | Automated Metrics          |
 |----------------------------------------|----------------------------|
 | Text Response Modeling      | BLEU、Perplexity、Dist |
+| Meme Retrieval  | Recall@1, Recall@5, MRR@5 | 
+| Meme Emotion Classification  | Accuracy@1, Accuracy@5 | 
+
 
 
 ## Data 
