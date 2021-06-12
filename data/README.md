@@ -8,7 +8,7 @@ This directory contains the official training/validation datasets for [DSTC10 Tr
 We release the train/valid data set on google drive and two test version sets will be used online challenging leaderboard.  
 
 
-### Data Sample 
+### Training Data Sample 
 
 
 |  Json Key Name  | Description                                |
@@ -47,6 +47,116 @@ We release the train/valid data set on google drive and two test version sets wi
     ]
 }
 ```
+
+
+## Data sample for Text Response Modeling 
+
+```json
+[
+    {
+        "history": [
+            {
+                "speaker_id": "[speaker1]",
+                "emotion_id": 5,
+                "img_id": "030",
+                "txt": "\u4eca\u5929\u5192\u96e8\u4e0a\u73ed\uff01\uff01\uff01\uff01"
+            },
+            {
+                "speaker_id": "[speaker2]",
+                "img_id": "107",
+                "txt": "\u54c8\u54c8\uff5e\u6211\u4eca\u5929\u4f11\uff5e\uff5e"
+            }
+        ],
+        "answer": {
+            "speaker_id": "[speaker1]",
+            "txt": "\u660e\u5929\u4ec0\u4e48\u73ed\uff1f"
+        }
+    },
+]
+```
+
+
+
+## Data sample for Meme Retrieval 
+
+
+```json
+[
+    {
+        "history": [
+            {
+                "speaker_id": "[speaker1]",
+                "emotion_id": 5,
+                "img_id": "030",
+                "txt": "\u4eca\u5929\u5192\u96e8\u4e0a\u73ed\uff01\uff01\uff01\uff01"
+            },
+            {
+                "speaker_id": "[speaker2]",
+                "img_id": "107",
+                "txt": "\u54c8\u54c8\uff5e\u6211\u4eca\u5929\u4f11\uff5e\uff5e"
+            },
+            {
+                "speaker_id": "[speaker1]",
+                "txt": "\u660e\u5929\u4ec0\u4e48\u73ed\uff1f"
+            }
+        ],
+        "candidate": {
+            "speaker_id": "[speaker1]",
+            "set": [
+                "013",
+                "023",
+                "040",
+                "044",
+                "097",
+                "110",
+                "136",
+                "179",
+                "196",
+                "202",
+                "265"
+            ]
+        },
+        "answer": {
+            "speaker_id": "[speaker1]",
+            "img_id": "196"
+        }
+    },
+]
+```
+
+
+## Data sample for Meme Emotion Classification
+
+
+```json
+[
+    {
+        "history": [
+            {
+                "speaker_id": "[speaker1]",
+                "emotion_id": 5,
+                "img_id": "030",
+                "txt": "\u4eca\u5929\u5192\u96e8\u4e0a\u73ed\uff01\uff01\uff01\uff01"
+            },
+            {
+                "speaker_id": "[speaker2]",
+                "img_id": "107",
+                "txt": "\u54c8\u54c8\uff5e\u6211\u4eca\u5929\u4f11\uff5e\uff5e"
+            },
+            {
+                "speaker_id": "[speaker1]",
+                "txt": "\u660e\u5929\u4ec0\u4e48\u73ed\uff1f",
+                "img_id": "196"
+            }
+        ],
+        "answer": {
+            "speaker_id": "[speaker1]",
+            "emotion_id": 29
+        }
+    },
+]
+```
+
 
 
 ### Copyright 
