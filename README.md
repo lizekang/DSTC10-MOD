@@ -58,9 +58,9 @@ Each submission will be evaluated in the following task-specific automated metri
 
 | Task                                   | Automated Metrics          |
 |----------------------------------------|----------------------------|
-| Text Response Modeling      | BLEU、Perplexity、Dist |
-| Meme Retrieval  | Recall@1, Recall@5, MRR@5 | 
-| Meme Emotion Classification  | Accuracy@1, Accuracy@5 | 
+| Text Response Modeling      | BLEU、Dist |
+| Meme Retrieval  | Recall_n@K, MAP | 
+| Meme Emotion Classification  | Accuracy@K | 
 
 
 
@@ -68,7 +68,7 @@ Each submission will be evaluated in the following task-specific automated metri
 
 In this challenge track, participants will use an augmented version of MOD dataset which includes multi-turn meme-incorporated open-domain conversions. All the ground-truth annotations for meme usage as well as the emotion stations are available to develop the components on the training and validation sets. 
 
-Data and system output format details can be found from [data/README.md](data/README.md). 
+Data and system output format details can be found from [data/README.md](data/README.md). In particular, we provide the illustration of data formation for each task in detail. 
 
 ## Timeline 
 * Training data released: Jun 14, 2021 
