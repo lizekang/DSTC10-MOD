@@ -63,6 +63,9 @@ Each submission will be evaluated in the following task-specific automated metri
 | Meme Emotion Classification  | Accuracy@K | 
 
 
+* BLEU2-4 is the English word level scoring, and dist1-2 is the automatic indicator of the diversity of dialogue content at the English word level.
+* Recall_n@K measures if the positive meme is ranked in the top k positions of n candidates. Mean average precision (MAP) consider the rank order.
+* The top k accuracy, referred to as Accuracy@k, indicates that if the correct emotion type in the highest k-class score emotion type, the score of metric is 1. 
 
 ## Data 
 
@@ -71,6 +74,7 @@ In this challenge track, participants will use an augmented version of MOD datas
 Data and system output format details can be found from [data/README.md](data/README.md). In particular, we provide the illustration of data formation for each task in detail. 
 
 ## Timeline 
+
 * Training data released: Jun 14, 2021 
 * Test data released: Sep 15, 2021
 
