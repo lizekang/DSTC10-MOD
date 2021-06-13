@@ -45,7 +45,7 @@ This challenge consists of three sub-tasks:
 Participants will develop systems to generate the outputs for each task.
 They can leverage the annotations and the ground-truth responses available in the training and validation datasets.
 
-In the test phase, participants will be given a set of unlabeled test instances.
+In the test phase, participants will be given a set of unlabeled dialogue history test instances.
 And they will submit **up to 5** system outputs for **all three tasks**.
 
 **NOTE**: For someone who are interested in only one or two of the tasks, we recommend to use our baseline system for the remaining tasks to complete the system outputs.
