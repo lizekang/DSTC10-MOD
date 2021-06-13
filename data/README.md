@@ -10,13 +10,15 @@ We release the train/valid data set on google drive and two test version sets wi
 
 ### Training Data Sample 
 
+We provide the data formation illustration for the training set. Each dict in the JSON file represents one dialogue sample, which contains multi-turn meme incorportated utterences.   
+
 
 |  Json Key Name  | Description                                |
 |:---------------:|--------------------------------------------|
 | dialogue xxxxx  | current dialogue id                        |
-| speaker_id      | speaker id                                 |
-| emotion_id      | emotion type                               |
-| image_id        | id of internet meme set                    |
+| speaker_id      | speaker id for current utterence           |
+| emotion_id      | emotion type for current meme usage        |
+| image_id        | id of internet meme in the meme set        |
 | txt             | text-only response                         |
 
 
@@ -50,6 +52,8 @@ We release the train/valid data set on google drive and two test version sets wi
 
 
 ## Data sample for Text Response Modeling 
+
+
 
 ```json
 [
