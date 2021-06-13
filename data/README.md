@@ -7,7 +7,7 @@ This directory contains the official training/validation datasets for [DSTC10 Tr
 
 We release the train/valid data set on google drive and two test version sets will be used online challenging leaderboard.  
 
-We are releasing the data divided into the following two subsets: 
+The data divided into the following three subsets: 
 
 * Training set 
   * c_train.json: Chinese training instances 
