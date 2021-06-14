@@ -5,7 +5,7 @@ This directory contains the official training/validation datasets for [DSTC10 Tr
 
 ## How to get the dataset 
 
-We release the train/valid data set on google drive and two test version sets will be used online challenging leaderboard.  
+We release the train/valid data set on [google drive](https://drive.google.com/drive/folders/1MCXEwNe5YcHkBtTh7S1O2g1WDznbh8z-?usp=sharing) and two test version sets will be used online challenging leaderboard.  
 
 The data divided into the following three subsets: 
 

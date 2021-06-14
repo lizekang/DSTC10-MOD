@@ -69,7 +69,7 @@ Each submission will be evaluated in the following task-specific automated metri
 
 ## Data 
 
-In this challenge track, participants will use an augmented version of MOD dataset which includes multi-turn meme-incorporated open-domain conversions. All the ground-truth annotations for meme usage as well as the emotion stations are available to develop the components on the training and validation sets. 
+In this challenge track, participants will use an augmented version of MOD dataset which includes multi-turn meme-incorporated open-domain conversions. All the ground-truth annotations for meme usage as well as the emotion stations are available to develop the components on the [training and validation sets](https://drive.google.com/drive/folders/1MCXEwNe5YcHkBtTh7S1O2g1WDznbh8z-?usp=sharing). 
 
 Data and system output format details can be found from [data/README.md](data/README.md). In particular, we provide the illustration of data formation for each task in detail. 
 
