@@ -193,8 +193,8 @@ Please feel free to contact:  feizhengcong (at) gmail (dot) com
 
 ## 时间线 
 
-* 训练集和验证集释放: Jun 14, 2021 
-* 测试集释放: Sep 15, 2021
+* 训练集和验证集释放: 2021年6月14日 
+* 测试集释放: 2021年9月15日
 
 
 ## 联系 
