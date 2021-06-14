@@ -18,12 +18,25 @@ Please first put the dialogue data to the path:
 ```
 data/dialog
 ```
+And put the extracted meme feature file to the path: 
 
+```
+data/meme
+```
+Download the parameters from huggingface for corresponding tasks: 
 
-## Task 1: Text Response Modeling
+| Task                                   | Initial parameters          |
+|----------------------------------------|----------------------------|
+| Text Response Modeling      | [Chinese](https://huggingface.co/thu-coai/CDial-GPT2_LCCC-base), [English](https://huggingface.co/gpt2)  |
+| Meme Retrieval  | [Chinese](https://huggingface.co/bert-base-chinese), [English](https://huggingface.co/bert-base-uncased) | 
+| Meme Emotion Classification  | [Chinese](https://huggingface.co/thu-coai/CDial-GPT2_LCCC-base), [English](https://huggingface.co/gpt2) | 
 
-## Task 2: Meme Retrieval
-
-## Task 3: Meme Emotion Classification
-
+And put the model into the path: 
+```
+ckpt/original_gpt
+```
+Finally, train the model with cmd: 
+```
+python train.py 
+```
 

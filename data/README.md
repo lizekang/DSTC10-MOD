@@ -23,7 +23,9 @@ The data divided into the following three subsets:
   * e_val_task3.json: English validation instances for task 2: Meme Emotion Classification 
 * Supplementary file: 
   * img2id.json: project the name of meme set into img id 
-  * emotion_dict: project the emotion type into emotion id 
+  * emotion_dict.json: project the emotion type into emotion id 
+  * id2feature.json: project img id into extracted image features from [clip](https://github.com/openai/CLIP)
+  * score file: evaluation scripts for different tasks 
 
 
 Participants will develop systems to take the key "history" of *c/e_val_task.json* as an input and generates the outputs following the **same format** as the key "answer" to estimate the performance.
