@@ -9,7 +9,7 @@ from dataset import MemeDataset, get_data
 from torch.utils.data import DataLoader  
 
 bert_path = 'ckpt/bert'
-train_data_path = 'data/dialog/e_validation.json'
+train_data_path = 'data/dialog/e_train.json'
 lr = 6e-5 
 epochs = 88
 use_cuda = torch.cuda.is_available() 

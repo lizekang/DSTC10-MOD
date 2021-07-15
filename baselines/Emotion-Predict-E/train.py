@@ -13,7 +13,7 @@ SPECIAL_TOKENS = ['[BOS]', '[EOS]', '[speaker1]', '[speaker2]', '[IMG]', '[TAG]'
 SPECIAL_TOKENS_DICT = {'bos_token':'[BOS]', 'eos_token':'[EOS]', 'additional_special_tokens':['[speaker1]', '[speaker2]', '[IMG]', '[TAG]'], 'pad_token':'[PAD]'}
 
 # data parameters
-train_data_path = 'data/dialog/e_validation.json'
+train_data_path = 'data/dialog/e_train.json'
 #train_data_path = 'data/dialog/toy_data.json' 
 val_data_path = 'data/dialog/e_validation.json' 
 feature_path = 'data/meme/id2feature.json'

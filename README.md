@@ -67,7 +67,8 @@ Each submission will be evaluated in the following task-specific automated metri
 * Recall_n@K measures if the positive meme is ranked in the top k positions of n candidates. Mean average precision (MAP) consider the rank order.
 * The top k accuracy, referred to as Accuracy@k, indicates that if the correct emotion type in the highest k-class score emotion type, the score of metric is 1. 
 * The final ranking for text response modeling will be based on **human evaluation results** only for selected systems according to automated evaluation scores. It will address the following aspects: grammatical/semantical correctness, naturalness, appropriateness, informativeness and relevance to given multimodal history. 
-
+* The final ranking for meme retrieval will be based on average score of Recall_10@1 and MAP. 
+* The final ranking for meme emotion classification will be based on score of Accuracy@1. 
 
 ## Data 
 
@@ -81,9 +82,12 @@ Data and system output format details can be found from [data/README.md](data/RE
 
 ## Timeline 
 
-* Training data released: Jun 14, 2021 
-* Test data released: Sep 15, 2021
-
+* Training and validation data released: Jun 14, 2021 
+* Test data released: Sep 13, 2021 
+* Submission of final results: Sep 20, 2021 
+* Final result announcement: Oct 1, 2021 
+* Paper submission: Nov 1, 2021 
+ 
 
 ## Rules
 
