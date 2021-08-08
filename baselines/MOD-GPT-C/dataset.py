@@ -29,9 +29,12 @@ def get_data(tokenizer, data_path, meme_feature_path):
         for i in range(len(dialog)): 
             if 'txt' in dialog[i].keys(): 
                 dialog[i]['txt'] = tokenize(dialog[i]['txt'], tokenizer) 
-            if i == 0: 
+            if i == 0:
                 history.append(dialog[i]) 
                 continue 
+            # if 'img_id' not in dialog[i].keys():
+            #     history.append(dialog[i])
+            #     continue
             pair = {'history': copy.deepcopy(history), 'answer': copy.deepcopy(dialog[i])} 
             dialog_list.append(pair) 
             history.append(dialog[i]) 
@@ -54,14 +57,15 @@ class MODDataset(Dataset):
         ans = copy.deepcopy(self.dialogs[index]['answer']) 
         #print(his)
         #print(ans)
-        history_txt, histroy_img, token_type_ids, labels, meme_flag = build_input_from_segments(history=his, answer=ans, tokenizer=self.tokenizer, id2feature=self.id2feature) 
+        history_txt, histroy_img, token_type_ids, labels, meme_flag, id_labels = build_input_from_segments(history=his, answer=ans, tokenizer=self.tokenizer, id2feature=self.id2feature) 
         history_txt = torch.LongTensor(history_txt) 
         histroy_img = torch.from_numpy(np.array(histroy_img)).float() 
         token_type_ids = torch.Tensor(token_type_ids).long()
         labels = torch.Tensor(labels).long() 
         meme_flag = torch.Tensor(meme_flag).long()
+        id_labels = torch.Tensor(id_labels).long()
 
-        return history_txt, histroy_img, token_type_ids, labels, meme_flag  
+        return history_txt, histroy_img, token_type_ids, labels, meme_flag, id_labels  
 
 
 
@@ -129,17 +133,21 @@ def build_input_from_segments(history, tokenizer, id2feature, answer=None):
             history_txt += content 
             token_type_ids += [speaker_id] * len(content) 
             labels += content 
-    
+        id_labels = []
         labels += [-100, -100] 
         history_txt += [tag] 
         token_type_ids += [img] 
         if 'img_id' in answer.keys(): 
             history_img += [id2feature[answer['img_id']]] 
             meme_flag = [1]
+            id_labels.append(int(answer['img_id']))
         else:
             history_img += [[0.0]*512]
             meme_flag = [0] 
-    return history_txt, history_img, token_type_ids, labels[1:], meme_flag 
+    else:
+        meme_flag = [0]
+        id_labels = [0]
+    return history_txt, history_img, token_type_ids, labels[1:], meme_flag, id_labels 
 
 
 if __name__ == '__main__': 

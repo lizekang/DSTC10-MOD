@@ -1,0 +1,91 @@
+{
+    "dialogue 11001": [
+        {
+            "speaker_id": "[speaker1]",
+            "emotion_id": 5,
+            "img_id": "030",
+            "txt": "\u4eca\u5929\u5192\u96e8\u4e0a\u73ed\uff01\uff01\uff01\uff01"
+        },
+        {
+            "speaker_id": "[speaker2]",
+            "img_id": "107",
+            "txt": "\u54c8\u54c8\uff5e\u6211\u4eca\u5929\u4f11\uff5e\uff5e"
+        },
+        {
+            "speaker_id": "[speaker1]",
+            "emotion_id": 29,
+            "img_id": "196",
+            "txt": "\u660e\u5929\u4ec0\u4e48\u73ed\uff1f"
+        },
+        {
+            "speaker_id": "[speaker2]",
+            "txt": "\u65e9\u73ed"
+        },
+        {
+            "speaker_id": "[speaker1]",
+            "txt": "\u660e\u5929\u4e5f\u662f\u4e0b\u96e8\u54e6\uff01\u4eb2\uff0c"
+        },
+        {
+            "speaker_id": "[speaker2]",
+            "txt": "\u6211\u77e5\u9053"
+        },
+        {
+            "speaker_id": "[speaker1]",
+            "txt": "\u6ca1\u4e8b\uff0c\u6211\u4eca\u5929\u5dee\u70b9\u70b9\u649e\u4eba\u4e86\uff0c"
+        },
+        {
+            "speaker_id": "[speaker2]",
+            "emotion_id": 7,
+            "img_id": "121",
+            "txt": "\u7eb3\u5c3c\uff1f\uff01\u4ec0\u4e48\u60c5\u51b5\uff1f\uff1f\uff1f"
+        },
+        {
+            "speaker_id": "[speaker1]",
+            "txt": "\u5730\u6ed1\uff0c\u5239\u8f66\u5239\u4e0d\u4f4f\u4e86\uff0c\u5c31\u6ed1\u8fc7\u53bb\u4e86\uff0c"
+        },
+        {
+            "speaker_id": "[speaker2]",
+            "txt": "\u5929\u54ea\uff0c\u4f60\u5c0f\u5fc3\u70b9\u5566\uff01\uff01\uff01"
+        },
+        {
+            "speaker_id": "[speaker1]",
+            "txt": "\u5f88\u5c0f\u5fc3\u4e86\uff0c\u9a91\u7684\u597d\u6162\u4e86\uff01\uff01"
+        },
+        {
+            "speaker_id": "[speaker2]",
+            "txt": "\u597d\u5427\uff0c\u96e8\u5929\uff0c\u6211\u90fd\u4e0d\u9a91\u8f66"
+        },
+        {
+            "speaker_id": "[speaker1]",
+            "txt": "\u91cd\u70b9\u3002\u4e0d\u9a91\u8f66\u8d70\u8def\u597d\u8fdc\u554a\uff01\uff01\uff01"
+        },
+        {
+            "speaker_id": "[speaker2]",
+            "txt": "\u6253\u8f66\u2026\u2026\u6211\u90fd\u662f\u4e0a\u73ed\u6253\u8f66\uff0c\u4e0b\u73ed\u8d70\u8def"
+        },
+        {
+            "speaker_id": "[speaker1]",
+            "txt": "\u90a3\u6211\u4e00\u5929\u8981\u82b130"
+        },
+        {
+            "speaker_id": "[speaker2]",
+            "txt": "\u2026\u2026\u90a3\u4e48\u8fdc\u4e48\uff1f"
+        },
+        {
+            "speaker_id": "[speaker1]",
+            "txt": "\u6765\u56de\uff01"
+        },
+        {
+            "speaker_id": "[speaker2]",
+            "txt": "\u597d\u5427\uff0c\u6211\u662f\u5728\u8d77\u6b65\u4ef7\u4e4b\u5185"
+        },
+        {
+            "speaker_id": "[speaker1]",
+            "txt": "\u600e\u4e48\u4e0d\u51fa\u53bb\u7ea6\u4f1a\u554a\uff01"
+        },
+        {
+            "speaker_id": "[speaker2]",
+            "txt": "\u51bb\u6b7b\u4e86\uff0c\u7ea6\u4ec0\u4e48\u7ea6"
+        }
+    ]
+}

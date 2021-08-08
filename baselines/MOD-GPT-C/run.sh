@@ -1,2 +1,2 @@
-cd  /apdcephfs/share_47076/alenfei/dstc10/new-MOD-GPT-C
-python train.py
+cd /apdcephfs/share_47076/yshzhu/shared/zhangzhexin/mod_dstc10/baselines/MOD-GPT-C
+python -u train.py &> ../../logs/log.txt

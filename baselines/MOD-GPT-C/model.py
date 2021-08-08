@@ -14,6 +14,10 @@ class MemeDialoGPT(GPT2PreTrainedModel):
         # predict the meme usage 
         self.lm_flag = nn.Linear(config.n_embd, 2)
 
+        self.num_labels = 304 
+        self.dropout = nn.Dropout(0.1) 
+        self.classifier = nn.Linear(config.n_embd, self.num_labels)
+
     def tie_weights(self): 
         self._tie_or_clone_weights(self.lm_head, self.transformer.wte) 
     
@@ -41,7 +45,7 @@ class MemeDialoGPT(GPT2PreTrainedModel):
             if img_feature[0][0] != 0.:  
                 img_loss_fct = MSELoss() 
                 img_loss = img_loss_fct(img_regs, img_feature) 
-                print(img_loss)
+                # print(img_loss)
                 loss += img_loss
             outputs = (loss,) + outputs 
         return outputs   
