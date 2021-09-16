@@ -39,7 +39,7 @@ For Text Response Modeling, please replace the "txt" value in answer with your a
 ]
 ```
 
-For Meme Retrieval, please replace the "img_id" value in answer with you results. 
+For Meme Retrieval, please replace the "img_id" value in answer with you results, i.e., a sorted list for candidate set. For example, \["013", "040", "023", "044", "097", "110", "136", "179", "202", "196", "265"\].  
 
 ```json
 [
@@ -85,7 +85,7 @@ For Meme Retrieval, please replace the "img_id" value in answer with you results
 ]
 ```
 
-For Meme Emotion Classification, please replease "emotion_id" value with your answer. 
+For Meme Emotion Classification, please replease "emotion_id" value with your answer, i.e., top-5 candidate emtion ids. 
 
 ```json
 [
