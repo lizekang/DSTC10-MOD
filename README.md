@@ -85,7 +85,7 @@ Data and system output format details can be found from [data/README.md](data/RE
 
 * Training and validation data released: Jun 14, 2021 
 * Test data released: Sep 13, 2021 
-* Submission of final results: Sep 20, 2021 
+* Submission of final results: Sep 28, 2021 
 * Final result announcement: Oct 1, 2021 
 * Paper submission: Nov 1, 2021 
  
@@ -199,7 +199,8 @@ Please feel free to contact:  feizhengcong (at) gmail (dot) com
 ## 时间线 
 
 * 训练集和验证集释放: 2021年6月14日 
-* 测试集释放: 2021年9月15日
+* 测试集释放: 2021年9月15日 
+* 最终提交: 2021年9月28日 
 
 
 ## 联系 
