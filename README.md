@@ -16,6 +16,22 @@ As a kind of new expression elements, Internet memes are popular and extensively
 * [Baseline Details](baselines/README.md) 
 * [Test Data](data/test/README.md)
 
+
+If you want to publish experimental results with this dataset or use the baseline models, please cite the following article:
+
+```
+@article{fei2021towards,
+  title={Towards Expressive Communication with Internet Memes: A New Multimodal Conversation Dataset and Benchmark},
+  author={Fei, Zhengcong and Li, Zekang and Zhang, Jinchao and Feng, Yang and Zhou, Jie},
+  journal={arXiv preprint arXiv:2109.01839},
+  year={2021}
+}
+```
+
+**NOTE**: This paper reports the results with an earlier version of the dataset and the baseline models, which will differ from the baseline performances on the official challenge resources.
+
+
+
 ## Task
 
 This challenge consists of three sub-tasks: 
