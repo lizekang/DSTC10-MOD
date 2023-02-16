@@ -6,6 +6,8 @@ This repository contains the data, scripts and baseline codes for [DSTC10](https
 
 As a kind of new expression elements, Internet memes are popular and extensively used in online chatting scenarios since they manage to make dialogues vivid, moving, and interesting. Meanwhile, there are many implicit and strong emotions delivered by Internet memes. However, most current dialogue researches focus on text-only conversation tasks. This challenge track aims to support Meme incorporated Open-domain Dialogue, where the formation of utterances can be text-only, meme-only, or mixed information. Compared to previous dialogue tasks, MOD is much more challenging since it requires the model to understand the multimodal elements as well as the emotions behind them.  Correspondingly, we further split the challenge into three sub-tasks: 1) text response modeling, which evaluates the quality of text-only response, 2) meme retrieval, which discriminates the suitability of meme usage, and 3) emotion classification, which predicts the current emotion type for speakers. 
 
+In order to facilitate further research, we have released a full dataset, including human evaluation results, annotation of test set.
+
 **Organizers:** Zhengcong Fei, Zekang Li, Jinchao Zhang, Yang Feng, Jie Zhou
 
 
@@ -15,7 +17,7 @@ As a kind of new expression elements, Internet memes are popular and extensively
 * [Data Formats](data/README.md)
 * [Baseline Details](baselines/README.md) 
 * [Test Data](data/test/README.md)
-
+* [Full Data](https://drive.google.com/file/d/1ROUOEVFCM5PsL4y3x4UvJ_8AvPgjTt1k/view?usp=sharing)
 
 If you want to publish experimental results with this dataset or use the baseline models, please cite the following article:
 
